@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Hangman</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row ">
+            <div class="col center s12 m12 l6 jeu">
+                <div id="horizontalBas"></div>
+                <div id="horizontalHaut"></div>
+                <div id="verticalG"></div>
+                <div id="verticalP"></div>
+                <div id="oblique"></div>
+                <div class="corps">
+                    <div id="tete"></div>
+                    <div id="abdomen"></div>
+                    <div class="main" id="main1"></div>
+                    <div class="main" id="main2"></div>
+                    <div class="pied" id="pied1"></div>
+                    <div class="pied" id="pied2"></div>
+                </div>
+            </div>
+            <div class="col s12 m12 l6 questions center-align">
+                <h3 style="margin-top:10% ;">Devines le nom d'un #CS</h3>
+                <h3>Points: <span id="point">0</span></h3>
+                <h3 id="underscore">_</h3>
+                <h3>Essais: <span id="essai">11</span></h3>
+                <h3>Caractères entrés: <br><span id="entree" style=" font-size:1rem; word-wrap: break-word;">N/A</span>
+                </h3>
+                <h3 id="reponse"></h3>
+
+            </div>
+        </div>
+        <div class="row center">
+            <h1 class="center-align" id="affichage"></h1>
+            <button class="btn" id="commencer">Recommencer</button>
+        </div>
+
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="script.js"></script>
+
+</html>

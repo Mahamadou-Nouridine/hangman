@@ -1,0 +1,156 @@
+
+    body {
+        display: flex;
+        background: linear-gradient(to right, rgb(188, 195, 205), rgb(43, 143, 36));
+    }
+
+    .corps {
+        width: 150px;
+        height: 350px;
+        position: relative;
+        left: 125px;
+        top: 90px;
+    }
+
+    #tete {
+        position: relative;
+        width: 80px;
+        height: 80px;
+        background-color: red;
+        border-radius: 50%;
+        left: 23%;
+        display: none;
+    }
+
+    #main1,
+    #main2,
+    #pied1,
+    #pied2,
+    #abdomen {
+        background-color: black;
+        position: absolute;
+        display: none;
+    }
+
+    #abdomen {
+        top: 80px;
+        width: 50px;
+        height: 150px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        left: 50px;
+    }
+
+    #main1 {
+        top: 80px;
+        width: 20px;
+        height: 130px;
+        transform-origin: 50% 50%;
+        transform: rotate(20deg);
+        left: 20px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+
+    }
+
+    #main2 {
+        top: 80px;
+        width: 20px;
+        height: 130px;
+        transform-origin: 50% 50%;
+        transform: rotate(-20deg);
+        left: 110px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    #pied1 {
+        width: 20px;
+        height: 140px;
+        left: 30px;
+        top: 210px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        transform-origin: 50% 50%;
+        transform: rotate(20deg);
+
+    }
+
+    #pied2 {
+        width: 20px;
+        height: 140px;
+        left: 100px;
+        top: 210px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        transform-origin: 50% 50%;
+        transform: rotate(-20deg);
+    }
+
+    .jeu {
+        position: relative;
+        width: 400px;
+        height: 600px;
+    }
+
+    #horizontalBas,
+    #horizontalHaut,
+    #verticalG,
+    #verticalP,
+    #oblique {
+        background-color: black;
+        position: absolute;
+        display: none;
+        transition: all 300ms ease;
+    }
+
+    #horizontalBas {
+        width: 350px;
+        height: 20px;
+        bottom: 0;
+        left: 50px;
+    }
+
+    #horizontalHaut {
+        width: 200px;
+        height: 20px;
+        left: 200px;
+    }
+
+    #verticalG {
+        width: 20px;
+        height: 600px;
+        left: 380px;
+    }
+
+    #verticalP {
+        width: 20px;
+        height: 100px;
+        left: 200px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    #oblique {
+        width: 20px;
+        height: 100px;
+        top: -10px;
+        border-radius: 10px;
+        transform-origin: 50% 50%;
+        transform: rotate(-45deg);
+        left: 350px;
+    }
+
+    #commencer{
+        display: none;
+    }
